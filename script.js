@@ -18,11 +18,11 @@ var winningCombinations = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,
     if (!isUserTurn1) {
         $(this).addClass('user1');
         isUserTurn1 = true;
-        // store in user1 array
+        // alert("Player 1");
     } else {
         $(this).addClass('user2');
         isUserTurn1 = false;
-        // store in user2 arrays
+        // alert("Player 2")
     }
 
 
@@ -68,10 +68,10 @@ var winningCombinations = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,
     }
   });
 
- function someoneWon(Winner){
-  console.log(Winner + " won")
- }
+  function someoneWon(winner){
+    $('td').unbind("click");
+    window.alert(winner + " won");
 
-
+  }
 
 })

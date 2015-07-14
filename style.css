@@ -1,29 +1,48 @@
 
+.container{
+  position: relative;
+  margin: auto;
+  border: 2px dotted red;
+  padding-bottom: 800px;
+}
 
 table{
   border-spacing: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border:2px solid black;
+  float: left;
 
 }
 
 td {
   padding: 0px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   font-size: 8em;
   border:2px solid black;
 }
 
 
 
+
 .user1{
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQICFaxQZii81ueiGZDMjBvXmpmFs-fZe6iRZHnsqeNBj4u_SIPpA);
-  cursor: pointer
+  background-size: 250px;
+  cursor: pointer;
 }
 .user2{
-  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj76Zg92Dm2nZlC_9FyOKo8RACK5evLWyqy1WBerqCivZ3muPUkw);
+  background-image: url(https://andygaudion93.files.wordpress.com/2011/02/mr-men-show.jpg);
+  background-size: 260px;
   cursor: pointer;
+}
+
+.play1{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQICFaxQZii81ueiGZDMjBvXmpmFs-fZe6iRZHnsqeNBj4u_SIPpA) no-repeat ;
+  float: right;
+
+}
+
+.play2{
+  background-image: url(https://andygaudion93.files.wordpress.com/2011/02/mr-men-show.jpg) no-repeat;
+  border-radius: 100%;
+  float: right;
 }
 
