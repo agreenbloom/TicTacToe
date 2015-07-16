@@ -25,17 +25,14 @@ $(document).ready(function() {
 
 
   var checkWin = function() {
-    console.log("--------------check win-------------------")
     var userCells = $( "."+turn ).map(function() { return this.id; });
     for (var i = 0; i < winningCombinations.length; i++) {
       var hasCompleteSet = true;
       var CurrentWinningCombination = winningCombinations[i];
-      console.log(CurrentWinningCombination)
       // Code to Check User #1 winning?
       for (var arr = 0; arr < CurrentWinningCombination.length; arr++) {
         var singleCell = CurrentWinningCombination[arr];
         var userHasCell = $.inArray(singleCell.toString(), userCells) ;
-        console.log(userHasCell)
         if(userHasCell == -1) {
           hasCompleteSet = false
         }
@@ -62,29 +59,7 @@ $(document).ready(function() {
     // Switch turns
     switchTurns()
 
-    //   if(hasCompleteSet){
-    //     someoneWon("user 1");
-    //   } else {
-    //     // Code to check User #2 winning?
-    //     hasCompleteSet = true;
-    //     var userCells = $( ".user2" ).map(function() {
-    //       return this.id;
-    //     });
 
-    //     for (var arr = 0; arr < CurrentWinningCombination.length; arr++) {
-    //       var singleCell = CurrentWinningCombination[arr];
-
-    //       var userHasCell = $.inArray(singleCell.toString(), userCells) ;
-    //       if(userHasCell == -1) {
-    //         hasCompleteSet = false
-    //       }
-    //     }
-
-    //     if(hasCompleteSet){
-    //       someoneWon("user 2");
-    //     }
-    //   }
-    // }
   });
 
 })

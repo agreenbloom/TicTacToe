@@ -1,30 +1,36 @@
-
-.container{
-  float:left;
-  width:75%;
+h1{
+  text-align: center;
+  font-family: arial, sans-serif;
 }
 
-table{
-  border-spacing: 0px;
-  float: left;
 
+.container{
+  width:65%;
+  margin: 0 auto;
+
+}
+
+.board table{
+  border-spacing: 1px;
 }
 
 td {
-  padding: 0px;
   width: 200px;
   height: 200px;
   font-size: 8em;
   border:2px solid black;
+  background-color: black;
 }
 
-
+td:hover{
+  background-color: #555555;
+}
 
 
 
 .user2{
   background-image:url(https://andygaudion93.files.wordpress.com/2011/02/mr-men-show.jpg); url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQICFaxQZii81ueiGZDMjBvXmpmFs-fZe6iRZHnsqeNBj4u_SIPpA);
-  background-size: 250px;
+  background-size: 265px;
   cursor: pointer;
 }
 .user1{
@@ -34,25 +40,40 @@ td {
 }
 
 .image_container{
-  width: 100px;
-  height: 200px;
-  display: block;
-  float: left;
+  width: 65%;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
 }
 
  .image1 img, .image2 img {
-  width:135px;
-  /*height:135px;*/
-  display: inline-block;
+  width:255px;
+  height: 200px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-/*
- .image2 img {
-  width: 5px;
-  height: 5px;
-  display:block;
-  margin: 1em;
 
-}*/
+.image1{
+  position: absolute;
+  float: right;
+  margin-right: 70%;
+  right: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+
+}
+
+.image2 {
+  position: absolute;
+  float: left;
+  margin-left: 45%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 255px;
+
+
+}
 
 .winningMessage{
   display: none;
