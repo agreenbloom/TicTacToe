@@ -1,6 +1,9 @@
 h1{
   text-align: center;
   font-family: arial, sans-serif;
+  margin: 0 auto;
+  width: 65%;
+  padding-right: 250px;
 }
 
 
@@ -12,6 +15,7 @@ h1{
 
 .board table{
   border-spacing: 1px;
+  vertical-align: center;
 }
 
 td {
@@ -40,10 +44,12 @@ td:hover{
 }
 
 .image_container{
-  width: 65%;
   height: 250px;
   margin: 0 auto;
   position: relative;
+  font-family: arial, sans-serif;
+  text-align: center;
+  width: 65%;
 }
 
  .image1 img, .image2 img {
@@ -59,27 +65,30 @@ td:hover{
   float: right;
   margin-right: 70%;
   right: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
 
 }
 
 .image2 {
   position: absolute;
   float: left;
-  margin-left: 45%;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  width: 255px;
-
+  margin-left: 40%;
+  left: 0;
 
 }
 
 .winningMessage{
   display: none;
+  border: 1px solid red;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-size: 5em;
+  background-color: #FFCCCC;
+  width: 80%;
+
+
 }
 
-.winningMessage .user1, .winningMessage .user2 {
+./*winningMessage .user1, .winningMessage .user2 {
   display: none;
 }
-
+*/

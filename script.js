@@ -20,7 +20,8 @@ $(document).ready(function() {
 
   var someoneWon = function(){
     $('td').off("click");
-    window.alert(turn + " won");
+    // window.alert(turn + " won");
+    $('.winningMessage').show();
   }
 
 
@@ -58,7 +59,6 @@ $(document).ready(function() {
 
     // Switch turns
     switchTurns()
-
 
   });
 
