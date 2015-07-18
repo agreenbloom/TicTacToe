@@ -20,10 +20,9 @@ $(document).ready(function() {
 
   var someoneWon = function(){
     $('td').off("click");
-    // window.alert(turn + " won");
-    $('.winningMessage').show();
-  }
-
+    window.alert(turn + " won");
+      $('.winningMessage').show("slow");
+    }
 
   var checkWin = function() {
     var userCells = $( "."+turn ).map(function() { return this.id; });

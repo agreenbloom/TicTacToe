@@ -2,21 +2,23 @@ h1{
   text-align: center;
   font-family: arial, sans-serif;
   margin: 0 auto;
-  width: 65%;
+  width: 100%;
   padding-right: 250px;
 }
 
 
 .container{
-  width:65%;
-  margin: 0 auto;
+  width:100%;
+  /*margin: 0 auto;*/
 
 }
 
-.board table{
-  border-spacing: 1px;
+.board {
   vertical-align: center;
+  margin: 0 auto;
+  border-spacing: 5px;
 }
+
 
 td {
   width: 200px;
@@ -46,10 +48,11 @@ td:hover{
 .image_container{
   height: 250px;
   margin: 0 auto;
+  width: 10%;
   position: relative;
   font-family: arial, sans-serif;
   text-align: center;
-  width: 65%;
+
 }
 
  .image1 img, .image2 img {
@@ -63,7 +66,7 @@ td:hover{
 .image1{
   position: absolute;
   float: right;
-  margin-right: 70%;
+  margin-right: 80%;
   right: 0;
 
 }
@@ -71,7 +74,7 @@ td:hover{
 .image2 {
   position: absolute;
   float: left;
-  margin-left: 40%;
+  margin-left: 80%;
   left: 0;
 
 }
@@ -83,7 +86,7 @@ td:hover{
   text-align: center;
   font-size: 5em;
   background-color: #FFCCCC;
-  width: 80%;
+  width: 100%;
 
 
 }
