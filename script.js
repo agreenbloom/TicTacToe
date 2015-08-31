@@ -1,4 +1,3 @@
-var canvas;
 var user1 = "user1";
 var user2 = "user2";
 
@@ -21,8 +20,10 @@ $(document).ready(function() {
   var someoneWon = function(){
     $('td').off("click");
     window.alert(turn + " won");
-      $('.winningMessage').show("slow");
-    }
+      $('.winningMessage').show(1500);
+        $('this').slideUp('height', "+=500");
+  }
+
 
   var checkWin = function() {
     var userCells = $( "."+turn ).map(function() { return this.id; });
@@ -60,5 +61,5 @@ $(document).ready(function() {
     switchTurns()
 
   });
+});
 
-})
